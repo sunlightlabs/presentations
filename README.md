@@ -1,5 +1,5 @@
 
-# This is a Sunlight fork of reveal.js. We use it to track and archive our custom presentations.
+### This is a Sunlight fork of reveal.js. We use it to track and archive our custom presentations.
 
 # reveal.js [![Build Status](https://travis-ci.org/hakimel/reveal.js.png?branch=master)](https://travis-ci.org/hakimel/reveal.js)
 

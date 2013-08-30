@@ -5,7 +5,7 @@ app.use(express.bodyParser());
 var exec = require('child_process').exec;
 
 app.post('/postcommit', function(req, res){
-	if(req.body.payload.after  != null) {
+	if(req.body.payload != null) {
 		console.log('post commit hook triggered');
 		exec('cd $NODE_VIRTUAL_ENV/src/presentations/ && git pull', 
 			  function(error, stdout, stderr){

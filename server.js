@@ -7,7 +7,7 @@ var exec = require('child_process').exec;
 app.post('/postcommit', function(req, res){
 	if(req.body.after  != null) {
 		console.log('post commit hook triggered');
-		exec('cd $NODE_VIRUTAL_ENV/src/presentations/ && git pull', 
+		exec('cd $NODE_VIRTUAL_ENV/src/presentations/ && git pull', 
 			  function(error, stdout, stderr){
 			  	console.log('stdout: ' + stdout);
     			console.log('stderr: ' + stderr);

@@ -72,6 +72,14 @@
 					</div>
 					
 				</section>
+				<section>
+					<h2 class="left">About Me</h2>
+					<ul class="left">
+						<li>Software developer</li>
+						<li>Worked with USASpending data for 4 years</li>
+					</ul>
+
+				</section>
 				<section class="slide3">
 					<h3>Our Philosophy:</h3>
 					Government spending is the most direct window a citizen has into the government's actual priorities
@@ -113,8 +121,8 @@
 
 					<section>
 						<h3 class="left">Comprehensive</h3>
-						<p class="left" style="margin-top:20px;">Default mode of spending data should be disclosure. </p>
-						<p class="left" style=" margin-top: 20px;">Exceptions should be minimal and intuitive</p>
+						<ul class="left"><li>Default mode of spending data should be disclosure. </li>
+						<li>Exceptions should be minimal and intuitive</li>
 						<img src="images/ledger.png" style="float:right;" />
 						<aside class="notes">The whole point of spending disclosure is a data driven view of how the government functions and what it's priorities are. By only releasing certain information, you lessen that value of that more and more.</aside>
 					</section>
@@ -123,18 +131,19 @@
 						<ul class="left">
 							<li>Category codes helpful, but not a replacement for detailed description of spending</li>
 							<li>Context is important!</li>
-							<li>Metadata helps with context, in an automated way</li>
+							<li>Metadata helps with context, allows for aggregation</li>
 						</ul>
-						<aside class="notes">Metadata is what's really going to allow people to use your data with other data to create a whole new application or way of looking at it. If it is structured data is helps even more, allowing for automated analysis by software.</aside>
+						<aside class="notes">A common use case is to look up a contract for a particular product. This is not possible with NAICS or PSC, but can probably only be found by a keyword search. Since the full text of contracts is not available, it's even more important to have a prose description that details exactly what an obligation is for. </aside>
 					</section>
 					<section data-background="images/gears.jpg" data-background-color="0 0 0 0.8"	>
 						<div style="background:white; opacity: .9; float:left; padding: 30px; width: 100%; height: 100%;">
 						<h3 class="left">Interoperable</h3>
 						<ul class="left">
-							<li>Data can be denormalized, but must be interoperable</li>
+							<li>Data can reference other data (denormalized), but the reference data must also be accessible</li>
 							<li>Leverage existing standards </li>
-							<li>spending categories, geographic locations, treasury account symbols &nbsp;&nbsp;&nbsp;&nbsp;-->   all have a standard</li>
+							<li>spending categories, geographic locations, treasury account symbols &nbsp;&nbsp;&nbsp;&nbsp;-->   all have a standard format</li>
 						</ul>
+						<aside class="notes">It's fine for data to be denormalized, but users should be able to access the cross-referenced data, hopefully in the same fashion as the original data. For instance, product and service codes are in USASpending, but the data dictionary that includes the name and prose description is a larThis community wants to help itself, but they need some level of access to the experts. ge pdf.  </aside>
 					</div>
 					</section>
 				</section>
@@ -143,7 +152,7 @@
 					<h3 class="fragment" style="margin-top: 40px;">Let's see what the users have to say...</h3>
 				</section>
 				<section class="smaller-quote">
-					<h3 class="left" style="margin-left:-245px;">Quotes:</h3>
+					<h3 class="left" style="margin-left:-205px;">Quotes:</h3>
 						<div style="clear:both">
 						<blockquote class="left">&ldquo;The biggest difference between the CFFR and USASpending.gov is stewardship&rdquo;</blockquote>
 						<blockquote class="fragment left">&ldquo;It doesn’t cover all spending (80-82% of CFFR)&rdquo;</blockquote>
@@ -196,11 +205,11 @@
 					<div style="background-color:white; opacity: .9; border: 1px solid gray; padding: 35px;"
 					<h3>Consumers of this information can also be producers</h3>
 					</div>
-					<aside class="notes"><p>Many users requested a way to feed information back in to USASpending.gov, such as reporting errors or submitting fixes. They are definitely vested in making it better and more usable. They can also help with disseminationg information about this data, creating tutorials on using it, or publicizing it's uses.</p>
+					<aside class="notes"><p>Many users requested a way to feed information back in to USASpending.gov, such as reporting errors or submitting fixes. They are definitely vested in making it better and more usable. Sunlight alone has built an infrastructure to normalize all of the values in the data. They can also help with disseminationg information about this data, creating tutorials on using it, or publicizing it's uses.</p>
 					</aside>
 				</section>	
 				<section>
-					<h3 class="left">Let's Attack These First:</h3>
+					<h3 class="left">Three Easy Pieces</h3>
 					<ul class="left">	
 						<li>Documentation</li>
 						<li>Information on data quality and compliance</li>
@@ -216,6 +225,18 @@
 					<aside class="notes">I propose that the GAT board is in a good position to convene these kinds of users and the producers of the spending data in one place to address some of these challenges. Since the GAT board is responsible for strategic direction, it can set a precedent by engaging the community in the same way the Recovery board has in the past. It could be framed as a meeting, mini-conference or a development sprint where attendees work together to create documentation, tutorials, primers and tools for the data.</aside>
 				</section>
 				<section>
+					<h3 class="left">Structure</h3>
+					<ul class="left" style="clear:both;">
+						<li>Roundtable discussion</li>
+						<li>After hours social meetups</li>
+						<li>Day-long mini-conference</li>
+						<li>Development/Documentation sprint</li>
+					</ul>
+					<aside class="notes"><p>There are a lot of variations this could take. It could be an ongoing series, like a set of social meetups or roundtables. It could be a one time event like a mini conference that kicks off a broader discussion that can take place online. Or it could be a bit more collaborative like a development sprint.</p>
+					<p>In software development, people sprint for days on documentation alone. This community has a good enough working knowledge of the data that it could be a great resource for helping to create and distribute documentation, tutorials and guides for using this data.This community wants to help itself, but they need some level of access to the experts. </p></aside>
+
+				</section>
+				<section>
 					<h3>Potential Outcomes</h3>
 					<ul class="left">
 						<li>Knowledge sharing with those most likely to disseminate</li>
@@ -225,7 +246,7 @@
 						<li>The beginning of an online home for the federal spending data community</li>
 						<li>More informed discussions of spending transparency priorities</li>
 					</ul>
-					<aside class="notes">This community wants to help itself, but they need some level of access to the experts. Here's a list of some possibilities that could results from this. Documentation that is driven by and serves the community. Collaborative guides on how to use the data. Tools for users. Maybe you have some programmers who attend who write a script to parse all the address fields and convert them to lat/long. Or maybe they create a Q&amp;A site like Stack Exchange to host discussion about the data. 
+					<aside class="notes">Here's a list of some possibilities that could results from this. Documentation that is driven by and serves the community. Collaborative guides on how to use the data. Tools for users. Maybe you have some programmers who attend who write a script to parse all the address fields and convert them to lat/long. Or maybe they create a Q&amp;A site like Stack Exchange to host discussion about the data. </aside>
 				</section>
 				<section>
 					<h3 class="left">Potential Discussion Questions</h3>
